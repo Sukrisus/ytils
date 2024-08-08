@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ytils - Minecraft PE Utility Mod Menu Texture Pack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('mnt/data/334bd5802c7c7f655fd6eb1d63384199.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 10px; /* Adjust margin as needed */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            font-weight: 300;
+        }
+
+        .download-button {
+            background-color: #1DB954;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: transform 0.5s ease;
+            font-weight: 600;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-button:active {
+            transform: scale(1.2);
+            background-color: #1DB954; /* Prevents any color change on click */
+        }
+
+        .download-button:active::after {
+            content: "";
+            display: block;
+            animation: pop-out 0.3s ease forwards;
+        }
+
+        @keyframes pop-out {
+            from {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .features {
+            margin-top: 15px; /* Reduced margin-top */
+            max-width: 500px;
+            width: 80%;
+            text-align: center;
+            padding: 10px;
+            color: black; /* Text color inside the container */
+            background-color: white; /* Solid white background */
+            border: 2px solid white;
+            border-radius: 20px;
+            backdrop-filter: blur(5px); 
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 15px; /* Reduced margin-bottom */
+            font-weight: 600;
+        }
+
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .features ul li {
+            margin: 5px 0; /* Reduced margin */
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="https://cdn.discordapp.com/attachments/1153045450581086268/1271144543760285748/Untitled54_20240808220347.png?ex=66b6451b&is=66b4f39b&hm=f5b2320cc737bf64f31ab9ba9ab2373ff07aa7b494c4f813cfd5445f5e603e93&" alt="Ytils Logo">
+    <p>A Minecraft PE utility mod menu texture pack designed to enhance your gameplay experience with a variety of tools and mods at your fingertips.</p>
+    <a class="download-button" href="https://discord.com/invite/8u47KB5Wph" target="_blank">Download Now</a>
+
+    <div class="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Easy-to-use mod menu</li>
+            <li>Enhanced gameplay utilities</li>
+            <li>Customizable settings</li>
+            <li>Lightweight and optimized</li>
+            <li>Compatible with the latest version of Minecraft PE</li>
+        </ul>
+    </div>
+</body>
+</html>
