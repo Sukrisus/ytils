@@ -4,114 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ytils - Minecraft PE Utility Mod Menu Texture Pack</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: url('334bd5802c7c7f655fd6eb1d63384199.jpg') no-repeat center center fixed;
+            font-family: 'Montserrat', sans-serif;
+            background: url('mnt/data/334bd5802c7c7f655fd6eb1d63384199.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
             text-align: center;
+            overflow: hidden; /* Prevent scrolling */
+            background-attachment: fixed;
+            background-color: #000000; /* Fallback color */
+        }
+
+        .container {
+            max-width: 700px; /* Adjusted width */
+            height: 90vh; /* Adjusted height */
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevent internal scrolling */
+            margin-bottom: 60px; /* Space for footer */
         }
 
         .logo {
-            max-width: 60%;
+            max-width: 50%; /* Adjusted logo size */
             height: auto;
-            margin-bottom: 10px; /* Adjust margin as needed */
+            margin-bottom: 20px; /* Space below logo */
         }
 
         p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            max-width: 600px;
-            font-weight: 300;
+            font-size: 1rem; /* Adjusted font size */
+            margin-bottom: 20px; /* Space below text */
+            max-width: 90%; /* Ensured text fits within container */
+            font-weight: 400;
+            color: #e0e0e0;
+            line-height: 1.4;
         }
 
         .download-button {
             background-color: #1DB954;
             color: #ffffff;
-            padding: 15px 30px;
+            padding: 12px 24px;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1rem;
             border-radius: 50px;
-            transition: transform 0.5s ease;
+            transition: background-color 0.3s ease;
             font-weight: 600;
             outline: none;
             border: none;
             cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-button:hover {
+            background-color: #1aa34a;
         }
 
         .download-button:active {
-            transform: scale(1.2);
-            background-color: #1DB954; /* Prevents any color change on click */
-        }
-
-        .download-button:active::after {
-            content: "";
-            display: block;
-            animation: pop-out 0.3s ease forwards;
-        }
-
-        @keyframes pop-out {
-            from {
-                transform: scale(1.2);
-            }
-            to {
-                transform: scale(1);
-            }
+            background-color: #17a047;
+            box-shadow: 0 0 25px 10px rgba(29, 185, 84, 0.8);
         }
 
         .features {
-            margin-top: 15px; /* Reduced margin-top */
-            max-width: 500px;
-            width: 80%;
-            text-align: center;
-            padding: 10px;
-            color: black; /* Text color inside the container */
-            background-color: white; /* Solid white background */
-            border: 2px solid white;
-            border-radius: 20px;
-            backdrop-filter: blur(5px); 
+            margin-top: 20px;
+            padding: 15px;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-height: 200px; /* Increased height */
+            overflow-y: auto; /* Enable scrolling if needed */
         }
 
         .features h2 {
-            font-size: 2rem;
-            margin-bottom: 15px; /* Reduced margin-bottom */
+            font-size: 1.5rem; /* Adjusted font size */
+            margin-bottom: 10px;
             font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 1px;
         }
 
         .features ul {
             list-style-type: none;
             padding: 0;
-            font-size: 1rem;
-            font-weight: 300;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #dcdcdc;
         }
 
         .features ul li {
-            margin: 5px 0; /* Reduced margin */
+            margin: 5px 0;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
 <body>
-    <img class="logo" src="https://cdn.discordapp.com/attachments/1153045450581086268/1271144543760285748/Untitled54_20240808220347.png?ex=66b6451b&is=66b4f39b&hm=f5b2320cc737bf64f31ab9ba9ab2373ff07aa7b494c4f813cfd5445f5e603e93&" alt="Ytils Logo">
-    <p>A Minecraft PE utility mod menu texture pack designed to enhance your gameplay experience with a variety of tools and mods at your fingertips.</p>
-    <a class="download-button" href="https://discord.com/invite/8u47KB5Wph" target="_blank">Download Now</a>
-
-    <div class="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Easy-to-use mod menu</li>
-            <li>Enhanced gameplay utilities</li>
-            <li>Customizable settings</li>
-            <li>Lightweight and optimized</li>
-            <li>Compatible with the latest version of Minecraft PE</li>
-        </ul>
+    <div class="container">
+        <img class="logo" src="https://cdn.discordapp.com/attachments/1153045450581086268/1271144543760285748/Untitled54_20240808220347.png?ex=66b6451b&is=66b4f39b&hm=f5b2320cc737bf64f31ab9ba9ab2373ff07aa7b494c4f813cfd5445f5e603e93&" alt="Ytils Logo">
+        <p>A Minecraft PE utility mod menu texture pack designed to enhance your gameplay experience with a variety of tools and mods at your fingertips.</p>
+        <a class="download-button" href="https://discord.com/invite/8u47KB5Wph" target="_blank" id="download-button">Download Now</a>
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Easy-to-use mod menu</li>
+                <li>Enhanced gameplay utilities</li>
+                <li>Customizable settings</li>
+                <li>Lightweight and optimized</li>
+                <li>Compatible with the latest version of Minecraft PE</li>
+            </ul>
+        </div>
     </div>
+    <footer>
+        © 2024 Ytils Mod Menu. All Rights Reserved.
+    </footer>
+    <script>
+        const downloadButton = document.getElementById('download-button');
+
+        downloadButton.addEventListener('click', function() {
+            downloadButton.classList.add('active');
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target !== downloadButton) {
+                downloadButton.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
