@@ -3,155 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ytils - Minecraft PE Utility Mod Menu Texture Pack</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            background: url('mnt/data/334bd5802c7c7f655fd6eb1d63384199.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            overflow: hidden; /* Prevent scrolling */
-            background-attachment: fixed;
-            background-color: #000000; /* Fallback color */
-        }
-
-        .container {
-            max-width: 700px; /* Adjusted width */
-            height: 90vh; /* Adjusted height */
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7); /* Darker overlay */
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Prevent internal scrolling */
-            margin-bottom: 60px; /* Space for footer */
-        }
-
-        .logo {
-            max-width: 50%; /* Adjusted logo size */
-            height: auto;
-            margin-bottom: 20px; /* Space below logo */
-        }
-
-        p {
-            font-size: 1rem; /* Adjusted font size */
-            margin-bottom: 20px; /* Space below text */
-            max-width: 90%; /* Ensured text fits within container */
-            font-weight: 400;
-            color: #e0e0e0;
-            line-height: 1.4;
-        }
-
-        .download-button {
-            background-color: #1DB954;
-            color: #ffffff;
-            padding: 12px 24px;
-            text-decoration: none;
-            font-size: 1rem;
-            border-radius: 50px;
-            transition: background-color 0.3s ease;
-            font-weight: 600;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .download-button:hover {
-            background-color: #1aa34a;
-        }
-
-        .download-button:active {
-            background-color: #17a047;
-            box-shadow: 0 0 25px 10px rgba(29, 185, 84, 0.8);
-        }
-
-        .features {
-            margin-top: 20px;
-            padding: 15px;
-            color: white;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            max-height: 200px; /* Increased height */
-            overflow-y: auto; /* Enable scrolling if needed */
-        }
-
-        .features h2 {
-            font-size: 1.5rem; /* Adjusted font size */
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: #ffffff;
-            letter-spacing: 1px;
-        }
-
-        .features ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 0.9rem;
-            font-weight: 400;
-            color: #dcdcdc;
-        }
-
-        .features ul li {
-            margin: 5px 0;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9rem;
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.7);
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.4);
-        }
-    </style>
+    <title>Ytils - Modules</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
 </head>
 <body>
-    <div class="container">
-        <img class="logo" src="https://cdn.discordapp.com/attachments/1154296107107631104/1271790089625669737/Untitled54_20240810164931.png?ex=66b89e52&is=66b74cd2&hm=571c2b240faf69ea1f8a64f086557c0a88bcd4718028b246c466c49210daa0aa&" alt="Ytils Logo">
-        <p>A Minecraft PE utility mod menu texture pack designed to enhance your gameplay experience with a variety of tools and mods at your fingertips.</p>
-        <a class="download-button" href="https://discord.com/invite/8u47KB5Wph" target="_blank" id="download-button">Download Now</a>
-        <div class="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Easy-to-use mod menu</li>
-                <li>Enhanced gameplay utilities</li>
-                <li>Customizable settings</li>
-                <li>Lightweight and optimized</li>
-                <li>Compatible with the latest version of Minecraft PE</li>
-            </ul>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Ytils Logo"> <!-- Update the path if necessary -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#modules">Modules</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#license">License</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Ytils - Modules</h1>
+            <p>Enhance your Minecraft PE experience with our advanced mod menu modules.</p>
+            <a href="#download" class="btn">Download Now</a>
+        </div>
+    </section>
+    <section id="modules" class="modules">
+        <div class="container">
+            <h2>Our Modules</h2>
+            <div class="module-list">
+                <div class="module">
+                    <h3>Module 1</h3>
+                    <p>Description of Module 1.</p>
+                </div>
+                <div class="module">
+                    <h3>Module 2</h3>
+                    <p>Description of Module 2.</p>
+                </div>
+                <div class="module">
+                    <h3>Module 3</h3>
+                    <p>Description of Module 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="download">
+        <div class="container">
+            <h2>Download Ytils - Modules</h2>
+            <p>Get the latest version of Ytils - Modules and enjoy an enhanced gameplay experience.</p>
+            <a href="#" class="btn coming-soon" onclick="return false;">Coming Soon</a>
+ <!-- Replace with your actual download link -->
+        </div>
+    </section>
+    <section id="license" class="license">
+        <div class="container">
+            <h2>License Information</h2>
+            <p><strong>Modified License</strong></p>
+            <p>Copyright (c) 2024 Ytils</p>
+            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software under the following condition:</p>
+            <ul>
+                <li><strong>Use</strong> the Software.</li>
+            </ul>
+            <p>All other rights, including but not limited to the rights to:</p>
+            <ul>
+                <li>Copy</li>
+                <li>Modify</li>
+                <li>Merge</li>
+                <li>Publish</li>
+                <li>Distribute</li>
+                <li>Sublicense</li>
+                <li>Sell copies of the Software</li>
+            </ul>
+            <p>are expressly <strong>prohibited</strong>.</p>
+            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF:</p>
+            <ul>
+                <li>MERCHANTABILITY</li>
+                <li>FITNESS FOR A PARTICULAR PURPOSE</li>
+                <li>NONINFRINGEMENT</li>
+            </ul>
+            <p>IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+        </div>
+    </section>
     <footer>
-        © 2024 Ytils Mod Menu. All Rights Reserved.
+        <div class="container">
+            <p>&copy; 2024 Ytils - Modules. All rights reserved.</p>
+        </div>
     </footer>
-    <script>
-        const downloadButton = document.getElementById('download-button');
-
-        downloadButton.addEventListener('click', function() {
-            downloadButton.classList.add('active');
-        });
-
-        document.addEventListener('click', function(e) {
-            if (e.target !== downloadButton) {
-                downloadButton.classList.remove('active');
-            }
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
