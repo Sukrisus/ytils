@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ytils - Bedrock Utility UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #9C49CF;
+  overflow-x: hidden;
+}
+
+header {
+  background: #0a0a0a;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #9C49CF;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(156, 73, 207, 0.3);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #9C49CF;
+  letter-spacing: 1px;
+}
+
+.github-link {
+  color: #9C49CF;
+  text-decoration: none;
+  border: 1px solid #9C49CF;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  background-color: #9C49CF;
+  color: #000;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: radial-gradient(circle at top, rgba(156, 73, 207, 0.2), transparent 80%);
+  animation: fadeInUp 1.2s ease;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #ccc;
+  animation: fadeIn 2.3s ease-in-out;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 2.5rem;
+  background: linear-gradient(135deg, #9C49CF, #7d34ad);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(156, 73, 207, 0.6);
+}
+
+.section {
+  padding: 5rem 2rem;
+  background-color: #111;
+  animation: fadeIn 2s ease;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.screenshot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(156, 73, 207, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.screenshot:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(156, 73, 207, 0.4);
+}
+
+.screenshot img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+a:focus, button:focus {
+  outline: 2px solid #9C49CF;
+  outline-offset: 2px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ytils</div>
+    <a href="https://github.com/Sukrisus/Ytils-Modules" class="github-link" target="_blank">GitHub</a>
+  </header>  <section class="hero">
+    <h1>ytils - Bedrock Utility UI Pack</h1>
+    <p>A stylish, open-source utility mod menu UI texture pack for Minecraft Bedrock Edition.</p>
+    <a href="https://discord.gg/S79wFU63WF" class="btn-primary" target="_blank">Download Now</a>
+  </section>  <section class="section" id="screenshots">
+    <h2>UI Screenshots</h2>
+    <div class="screenshots-grid">
+      <div class="screenshot">
+        <img src="2.png" alt="UI Screenshot 1">
+      </div>
+    </div>
+  </section>  <footer>
+    &copy; 2025 ytils. View the project on <a href="https://github.com/Sukrisus/Ytils-Modules" style="color: #9C49CF; text-decoration: underline;">GitHub</a>.
+  </footer>
+</body>
+</html>
